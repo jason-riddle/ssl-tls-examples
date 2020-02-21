@@ -1,0 +1,15 @@
+version: '3.5'
+
+services:
+  vault:
+    image: vault
+    ports: ['8200:8200']
+    environment:
+      VAULT_DEV_ROOT_TOKEN_ID: root
+    cap_add:
+      - IPC_LOCK
+    healthcheck:
+      test: curl -s http://127.0.0.1:8200/v1/sys/health >/dev/null; if [[ $$? == 52 ]]; then echo 0; else echo 1; fi
+      interval: 10s
+      timeout: 2s
+      retries: 2
