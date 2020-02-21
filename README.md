@@ -8,5 +8,6 @@ verification.
 **Table of Contents**
 
 - [Generate Root, Server, and Client Certs using CFSSL](cfssl-examples/generate-root-server-client-certs)
+- [Certificate Management using Vault](vault-examples/certificate-management)
 
 <!-- END TOC -->
