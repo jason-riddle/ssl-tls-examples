@@ -10,7 +10,9 @@ generates a root, server, and client certificate.
 ### Usage
 
 ```
-make
+make root
+make server
+make client
 ```
 
 The current directory will be populated with a root, server, and client
