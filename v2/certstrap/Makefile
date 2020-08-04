@@ -1,0 +1,2 @@
+docs:
+	doctoc README.md
